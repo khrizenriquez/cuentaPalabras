@@ -1,0 +1,41 @@
+<!--
+	autor:			@khrizenriquez #afro-K
+-->
+<!doctype html>
+<html lang="es-gt">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Lectura de datos</title>
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<h1>Lectura de datos</h1>
+		<section>
+			<p>
+				Ingresa un párrafo en el campo que se te presenta y oprime el botón "Calcular" para saber la cantidad de letras que contiene este párrafo, la cantidad de palabras, los números que este contenga y los saltos de línea que tenga. Si quieres obtener el mismo resultado pero sin escribirlo sino que seleccionarlo por medio de un archivo existente puedes oprimir el botón "Desde archivo".
+			</p>
+			<div class="form-group" id="contenido">
+				<form action="class/abriendoArchivo.php" method="GET"  enctype="multipart/form-data">
+					<textarea class="form-control" name="ingresoDatosLectura" id="ingresoDatosLectura" cols="30" rows="10" placeholder="Ingresa el texto que deseas ver"></textarea>
+
+					<button class="btn btn-success" type="button" id="btnCalcular">
+						<i class="el-icon-ok"></i>Calcular
+					</button>
+					<button class="btn btn-danger" type="button" id="btnArchivo">
+						<i class="el-icon-file"></i>Desde archivo
+					</button>
+				</form>
+			</div>
+			<div class="mensaje" id="datos">
+				<i class="el-icon-file"></i>
+			</div>
+		</section>
+	</body>
+
+	<script src="js/libs/prefixfree.min.js"></script>
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/init.js"></script>
+</html>
